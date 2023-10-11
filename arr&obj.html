@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Object</title>
+</head>
+
+<body>
+    <div class="conatiner">simple code</div>
+    <script>
+        let myVar1 = 34;
+        //values we have in javascript is primitive and reference means ya to primitive data types bante h ya objects bante h
+        //primitive data types=int,boolean,string.
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined; //it means it has no value
+        //console me js likh rahe to har statement  ka result undefined aa raha h.but variable me store to ho jata h?
+
+        //object hamara key value pairs ko store krta h
+        let employee = {
+            name: "Yogita",
+            salary: 10000,
+            channel: "knowledge",
+        }
+        console.log(employee)
+        console.log(employee["channel"])
+
+        //array ek object hi h
+        let name = [1, 2, 3, "Yogita", undefined];
+        console.log(name[3])
+
+        //another method of creating an array.neeche hum kah rahe h ki new ek array type ka object banao
+        let object = new Array(1, 7, 3, "Neha", null);
+        console.log(object[3])
+        console.log(object.length);
+        object = object.sort();
+        console.log(object)
+            //push to humne neeche kiya h jab upr object print kara rahe h to bhi 6 ka hi array ka a raha h?
+        object.push("yogita")
+        console.log(object)
+    </script>
+</body>
+
+</html>
